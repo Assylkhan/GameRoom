@@ -29,6 +29,7 @@ public class Runner {
         Reporter.report(room.getToys());
         room.removeToy("ball", Age.CHILD);
         Reporter.report(room.getToys());
+//                      owner.Select(toys collection, price from, price until)
         Reporter.report(micheal.Select(room.getToys(), 100, 20000));
     }
 }
