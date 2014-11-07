@@ -6,9 +6,8 @@ import com.epam.reporter.Reporter;
 import com.epam.room.GameRoom;
 
 /**
- * @author Assylkhan Rakhatov
- * */
-
+ * created by Assylkhan Rakhatov on 07.11.2014
+ */
 public class Runner {
     public static void main(String[] args) {
         Owner micheal = new Owner();

@@ -8,8 +8,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
+/**
+ * created by Assylkhan Rakhatov on 07.11.2014
+ */
 public class Owner {
-
+    /**
+     *
+     * @param toys
+     * @return sorted by price toys
+     */
     public ArrayList<Toy> sortByPrice(ArrayList<Toy> toys){
         System.out.println("sort toys by price");
         Collections.sort(toys, new Comparator<Toy>() {
@@ -20,6 +27,12 @@ public class Owner {
         });
         return toys;
     }
+
+    /**
+     *
+     * @param toys
+     * @return sorted by name toys
+     */
     public ArrayList<Toy> sortByName(ArrayList<Toy> toys){
         System.out.println("sort toys by name");
         Collections.sort(toys, new Comparator<Toy>() {
@@ -36,6 +49,13 @@ public class Owner {
         return gameRoom;
     }
 
+    /**
+     *
+     * @param toys
+     * @param priceFrom
+     * @param priceUntil
+     * @return found toys
+     */
     public static ArrayList<Toy> Select(ArrayList<Toy> toys, int priceFrom, int priceUntil) {
         System.out.println("Selecting toys by price from - " + priceFrom + " until - " + priceUntil);
         ArrayList<Toy> foundToys = new ArrayList<Toy>();
@@ -45,9 +65,13 @@ public class Owner {
         return foundToys;
     }
 
+    /**
+     *
+     * @param toyCount
+     * @param allocatedMoney
+     */
     public void prepareRoom(int toyCount, int allocatedMoney) {
-        ToysFactory factory = new ToysFactory();
-        gameRoom.setToys(factory.create(40));
+        gameRoom.setToys(ToysFactory.create(40));
         gameRoom.setAllocatedMoney(allocatedMoney);
     }
 

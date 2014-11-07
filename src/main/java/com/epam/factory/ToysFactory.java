@@ -6,9 +6,18 @@ import com.epam.toys.*;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * created by Assylkhan Rakhatov on 07.11.2014
+ */
 public class ToysFactory {
     private static Random numberGenerator = new Random();
-    public ArrayList<Toy> create(int toyCount){
+
+    /**
+     *
+     * @param toyCount count of toys
+     * @return toys
+     */
+    public static ArrayList<Toy> create(int toyCount){
         ArrayList<Toy> toys = new ArrayList<Toy>();
         for (int i = 0; i < toyCount; i++) {
             toys.add(releaseToy());
@@ -16,7 +25,12 @@ public class ToysFactory {
         return toys;
     }
 
-    public Toy releaseToy(){
+    /**
+     *
+     * @return toy
+     */
+
+    public static Toy releaseToy(){
         int randomPrice = numberGenerator.nextInt(40000) + 1;
         switch (numberGenerator.nextInt(4)){
             case 0:
@@ -34,7 +48,13 @@ public class ToysFactory {
         }
     }
 
-    public <T> T randomElement(T[] elements){
+    /**
+     *
+     * @param elements
+     * @param <T>
+     * @return random value of given enum
+     */
+    public static <T> T randomElement(T[] elements){
         return elements[numberGenerator.nextInt(elements.length)];
     }
 }
