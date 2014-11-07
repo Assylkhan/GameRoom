@@ -10,6 +10,6 @@ public class Reporter {
         for (Toy toy : toys){
             System.out.println(i++ + ") " + toy.toString());
         }
-        System.out.println();
+        System.out.println("-------------------------------------------------------------------");
     }
 }
