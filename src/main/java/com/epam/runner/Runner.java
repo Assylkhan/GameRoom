@@ -21,7 +21,7 @@ import java.util.logging.Logger;
 public class Runner {
     public static void main(String[] args) {
         Owner micheal = new Owner();
-//          micheal.prepareRoom(toyCount, allocatedMoney);
+//      micheal.prepareRoom(toyCount, allocatedMoney);
         micheal.prepareRoom(50, 450000);
         GameRoom room = micheal.getRoom();
         Reporter.report(room.getToys());
