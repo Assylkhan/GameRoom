@@ -1,18 +1,9 @@
 package com.epam.runner;
 
 import com.epam.enums.Age;
-import com.epam.enums.Size;
 import com.epam.owner.Owner;
 import com.epam.reporter.Reporter;
 import com.epam.room.GameRoom;
-import com.epam.toys.Toy;
-import com.epam.toys.Transport;
-
-import java.awt.*;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.logging.Logger;
 
 /**
  * @author Assylkhan Rakhatov
